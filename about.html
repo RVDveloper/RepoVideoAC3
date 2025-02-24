@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="./index.html" class="menu-link">Inicio</a></li>
+                    <li><a href="./video.html" class="menu-link">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="hero">Informacion</h1>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Descripcion</h2>
+            <p>El trabajo trata de un video musical estilo "rave" para el álbum Karlo Bonkel.</p>
+            <p>El álbum tiene un estilo bizarro, minimalista y a la vez intenso, además de tener un aspecto "humorístico" a nivel musical. El video ha intentado retratar estos aspectos, con ediciones que intencionalmente aparentan baja calidad y esfuerzo.</p>
+            <p>En un principio pensábamos que el álbum trataba de una cucaracha cuando en realidad era un saltamontes, de ahí la temática.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Aspectos técnicos</h2>
+            <p>Kdenlive es un software de edición de video desarrollado por KDE, una organización que se dedica a hacer software semi-libre para el entorno de escritorio KDE.</p>
+            <p>Eso influye sobre todo en el estilo gráfico, ya que las aplicaciones de KDE comparten muchas dependencias que afectan (entre otras cosas) a la interfaz gráfica, dando así un estilo característico a las aplicaciones de KDE.</p>
+            <p>Al ser una interfaz gráfica, es bastante autoexplicativa: añades clips al proyecto para prepararlos (videos y sonido), luego los arrastras en la línea del tiempo y a partir de allí puedes empezar a manipularlos (cambiando duración, cortando partes, aplicando efectos, etc.).</p>
+            <p>El nombre es un juego de palabras que significa "KDE 'n live!".</p>
+        </div>
+        
+        <div class="card">
+            <h2>Transiciones y efectos</h2>
+            <p>La transición principal utilizada es el fade-in y el fade-out, ya que son rápidas de aplicar y las más útiles de lejos.</p>
+            <p>El efecto más utilizado ha sido "position and zoom", que permite colocar un video en el sitio y con el tamaño que se decida.</p>
+            <p>También se ha usado la transparencia y el selector cromático para modificar el fondo de las imágenes. El "rotate" estuvo a punto de usarse, pero al final se eliminó a causa del trabajo que daba.</p>
+            <p>Como es obvio, el uso de "keyframes" se puede usar para aplicar los efectos de forma progresiva, dando así, por ejemplo, la sensación de movimiento.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Razón de elección de la banda sonora</h2>
+            <p>Como se ha apuntado anteriormente, el video es una rave para el álbum Karlo Bonkel.</p>
+            <p>Las razones por las que se ha elegido es porque el saltamontes de la portada está chulo, porque el álbum está entretenido y porque el Kellersynth mola.</p>
+            <p>También se han añadido un par de aplausos en momentos clave (el principio y el final del video).</p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index3.html" class="btn">⬅ Volver al Inicio</a>
+        <p>&copy; 2025 Nil & Rafael. Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        
+        const menuIcon = document.getElementById('menuIcon');
+        const menu = document.getElementById('menu');
+
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

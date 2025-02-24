@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+body {
+    background: linear-gradient(45deg, #2a0035, #1b0036, #0c001f);
+    color: #fff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* ENCABEZADO */
+header {
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    /* background: linear-gradient(90deg, #7a0088, #9c0d91, #550d91); */
+   background:  #ff6f61;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+    animation: glow 2s infinite alternate;
+    position: relative;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5); }
+    to { text-shadow: 0 0 30px rgba(255, 0, 255, 1), 0 0 50px rgba(0, 255, 255, 1); }
+}
+
+/* Menú burger */
+.menu-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.menu-icon {
+    font-size: 55px;
+    cursor: pointer;
+    color: #ff6f61;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: rgba(40, 0, 53, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+    padding: 10px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu-link {
+    display: block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff0088, #550d91);
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+    text-align: center;
+}
+
+.menu-link:hover {
+    background: linear-gradient(45deg, #ff00ff, #ff0088);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.card {
+    background: rgba(40, 0, 53, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    text-align: left;
+    border: 2px solid rgba(255, 0, 255, 0.4);
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+    border: 2px solid rgba(0, 255, 255, 0.8);
+}
+
+
+.card h2 {
+    color: #ff6f61;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+
+.card::-webkit-scrollbar {
+    width: 10px;
+}
+
+.card::-webkit-scrollbar-track {
+    background: rgba(255, 0, 255, 0.1);
+    border-radius: 5px;
+}
+
+.card::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 255, 0.5);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 0, 255, 0.2);
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 0, 255, 0.8);
+}
+
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 0.9em;
+    background: rgba(40, 0, 53, 0.8);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+    color: #fff;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #ff00ff, #ff9900);
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+}
+
+
+@keyframes flicker {
+    0% {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
+    }
+    50% {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
+    }
+}
+
+footer p {
+    animation: flicker 1s infinite;
+    margin-top: 5px;
+}

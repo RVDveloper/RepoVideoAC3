@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rave de Cucarachas</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+            <div class="menu-container">
+                <div class="menu-icon" id="menuIcon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="menu" id="menu">
+                    <ul>
+                        <li><a href="about.html" class="menu-link">Información</a></li>
+                        <li><a href="video.html" class="menu-link">Video</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>🔥 Bienvenido al <span>Rave de Cucarachas</span> 🪳</h1>
+        <p>Sumérgete en la experiencia más underground y psicodélica del ciberespacio.</p>
+        </header>
+    
+        <section class="info">
+            <h2 class="neon-text">Descubre el Rave de Cucarachas</h2>
+            <p class="neon-text">
+                Este video es una experiencia visual única que combina la estética neón con el movimiento frenético de las cucarachas. 
+                Prepárate para un viaje psicodélico donde las luces brillantes y los ritmos electrónicos te transportarán a un mundo 
+                surrealista lleno de energía y movimiento.
+            </p>
+            <p class="neon-text">
+                Las cucarachas, símbolo de resistencia y adaptabilidad, cobran vida en este rave digital, creando un espectáculo 
+                visual que desafía los límites de la imaginación. ¡No te lo pierdas!
+            </p>
+            <!-- Cucarachas neón animadas -->
+            <div class="neon-cockroach" style="top: 10%; left: 5%; animation-delay: 0s;">
+                <div class="antenna left"></div>
+                <div class="antenna right"></div>
+            </div>
+            <div class="neon-cockroach" style="top: 30%; left: 20%; animation-delay: 2s;">
+                <div class="antenna left"></div>
+                <div class="antenna right"></div>
+            </div>
+            <div class="neon-cockroach" style="top: 50%; left: 40%; animation-delay: 1s;">
+                <div class="antenna left"></div>
+                <div class="antenna right"></div>
+            </div>
+            <div class="neon-cockroach" style="top: 70%; left: 60%; animation-delay: 3s;">
+                <div class="antenna left"></div>
+                <div class="antenna right"></div>
+            </div>
+            <div class="neon-cockroach" style="top: 90%; left: 80%; animation-delay: 4s;">
+                <div class="antenna left"></div>
+                <div class="antenna right"></div>
+            </div>
+        </section>
+    
+    <footer>
+        <p>&copy; 2025 Nil & Rafael. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        
+        const menuIcon = document.getElementById('menuIcon');
+        const menu = document.getElementById('menu');
+
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

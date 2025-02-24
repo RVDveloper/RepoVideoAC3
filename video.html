@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Reproductor - Rave de Cucarachas</title>
+</head>
+<body>
+    <!-- Fondo de cucarachas neón -->
+    <div class="neon-background">
+        <div class="neon-cockroach" style="top: 10%; left: 5%; animation-delay: 0s;"></div>
+        <div class="neon-cockroach" style="top: 30%; left: 20%; animation-delay: 2s;"></div>
+        <div class="neon-cockroach" style="top: 50%; left: 40%; animation-delay: 1s;"></div>
+        <div class="neon-cockroach" style="top: 70%; left: 60%; animation-delay: 3s;"></div>
+        <div class="neon-cockroach" style="top: 90%; left: 80%; animation-delay: 4s;"></div>
+    </div>
+
+    <header class="hero">
+        <div class="menu-container">
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="./index.html" class="menu-link">Inicio</a></li>
+                    <li><a href="./about.html" class="menu-link">Informacion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>🎶 Rave de Cucarachas 🪳🕺💃</h1>
+        <p>Disfruta del ritmo frenético con este videoclip.</p>
+    </header>
+
+    <div class="video-container">
+        <video id="video" class="custom-video">
+            <source src="https://niliara.net/garbage/video.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <div id="progress-bar">
+            <input type="range" id="progress" min="0" max="100" step="1" value="0">
+        </div>
+        <div class="controls">
+            <button id="playPause"><i class="fas fa-play"></i></button>
+            <button id="rewind"><i class="fas fa-backward"></i></button>
+            <button id="forward"><i class="fas fa-forward"></i></button>
+            <button id="mute"><i class="fas fa-volume-mute"></i></button>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+            <button id="fullscreen">⛶</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="index3.html" class="btn">⬅Volver al Inicio</a>
+        <p>&copy; 2025 Nil & Rafael. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
