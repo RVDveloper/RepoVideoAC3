@@ -34,12 +34,15 @@
     </header>
 
     <div class="video-container">
-        <video id="video" class="custom-video">
+        <video id="video" class="custom-video" preload="auto">
             <source src="https://niliara.net/garbage/video.mp4" type="video/mp4">
             Tu navegador no soporta el video.
         </video>
         <div id="progress-bar">
-            <input type="range" id="progress" min="0" max="100" step="1" value="0">
+            <input type="range" id="progress" min="0" step="1" value="0">
+            <div class="time-container">
+                <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span>
+            </div>
         </div>
         <div class="controls">
             <button id="playPause"><i class="fas fa-play"></i></button>
@@ -53,7 +56,7 @@
     </div>
 
     <footer>
-        <a href="index3.html" class="btn">⬅Volver al Inicio</a>
+        <a href="./index.html" class="btn">⬅Volver al Inicio</a>
         <p>&copy; 2025 Nil & Rafael. Todos los derechos reservados.</p>
     </footer>
 
