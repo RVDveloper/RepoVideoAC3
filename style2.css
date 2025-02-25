@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-/* Estilo general */
+
 body {
     background: linear-gradient(45deg, #2a0035, #1b0036, #0c001f);
     color: #fff;
@@ -43,7 +43,7 @@ header {
     animation: glow 2s infinite alternate;
 }
 
-/* Botones */
+
 .btn {
     display: inline-block;
     padding: 15px 30px;
